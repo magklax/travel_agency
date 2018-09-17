@@ -15,24 +15,89 @@ body {
 	background-color: #fff;
 }
 
-
-
 a {
   text-decoration: none;
 }
 
-
 .main-header {
+	display: flex;
+	flex-direction: column;
+	
+	
+	margin-bottom: 80px;
+	
 	background-color: #a4cde3;
 	background-image: url("../img/header-background.jpg");
 	background-position: top center;
   background-repeat: no-repeat;
 }
 
+.main-header .container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	
+	
+	padding: 60px 0;
+}
+
+.user-nav,
+.site-nav {
+	display: flex;
+	justify-content: flex-end;
+		
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.main-header-logo {
+	margin-right: 19px;	
+	width: 181px;
+	height: 37px;
+}
+
+.site-nav {
+	width: 770px;
+}
+user-nav {
+	width: 180px;
+}
+.user-nav a,
+.site-nav a {
+	display: block;
+	
+	color: #222;
+}
+
+.user-nav a:hover,
+.user-nav a:focus,
+.site-nav a:hover,
+.site-nav a:focus {
+	color: #ef5b5b;
+}
+
+.site-nav a {
+	padding-left: 50px;
+}
 
 
 
 
+
+
+
+.pink-text {
+	font-family: Segoe Script;
+	font-size: 24px;
+	color: #ef5b5b;
+}
 
 @font-face {
 	font-family: Segoe Script;
