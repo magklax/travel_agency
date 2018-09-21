@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	
+	width: 100px;
+  height: 100px;
+  padding: 0;
+  transform: translate(0, -50%);
+	
+	top: 150px;
+	
+	font-size: 0;
+  line-height: 0;
+	
+	color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+	cursor: pointer;
+}
+
+.slick-prev {
+	left: -125px;
+}
+
+.slick-next {
+	right: -125px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+	content: "";
+	position: absolute;
+	
+	width: 100px;
+  height: 100px;
+	
+	top: 0;
+	left: 0;
+	
+	background-repeat: no-repeat;
+}
+
+.slick-prev::before {
+	background-image: url("../img/arrow-pointing-to-left.svg");
+}
+
+.slick-next::before {
+	background-image: url("../img/arrow-pointing-to-right.svg");
+}
+
+

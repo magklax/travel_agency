@@ -1,5 +1,4 @@
 body {
-	margin: 0;
 	padding: 0;
 	
 	font-family: "Montserrat", sans-serif;
@@ -512,7 +511,7 @@ img {
 }
 
 .video-tour {
-	margin-bottom: 320px;
+	margin-bottom: 250px;
 	padding-top: 870px;
 	
 	vertical-align: top;
@@ -569,17 +568,231 @@ img {
 	text-align: center;
 }
 
-.feedback span {
+.feedback>span {
 	font-family: Segoe Script;
 	font-size: 24px;
 }
 
 .feedback h3 {
-	margin: 10px 0;
+	margin: 10px 0 50px;
 	
 	font-size: 28px;
 	color: #fff;
 }
+
+/************************************SLIDER************************************/
+
+.slider {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.slick-slide {
+	margin: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
+	transform: scale(0.75);
+}
+
+.slick-active {
+	opacity: .5;
+}
+
+.slick-current {
+	opacity: 1;
+	transform: scale(1);
+	position: relative;
+	min-height: 700px;
+}
+
+.client-feedback {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	
+	left: -300px;
+	top: 320px;	
+	width: 900px;
+	height: 320px;
+	
+	box-sizing: border-box;
+	padding: 60px 50px 20px;
+	
+	color: #fff;
+	order: 1000;
+	
+	background-image: url("../img/speech-bubble.svg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.client-text {
+	margin-bottom: auto;
+	
+	font-family: "Poppins";
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.slick-current .client-feedback {
+	display: flex;
+}
+
+.half-client-name {
+	display: inline-block;
+	
+	vertical-align: top;
+	
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 20x;
+}
+
+.half-client-name.slash {
+	width: 30px;
+	height: 50px;
+	
+	background-image: url("../img/slash.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.client-occupation {
+	font-size: 16px;
+}
+
+/******************************blog**************************************/
+
+.blog {
+	padding: 150px 0;
+	font-size: 24px;
+	text-align: center;
+	
+}
+
+.blog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	margin: 95px 0 20px;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.blog-list li {
+	width: 570px;
+	margin-bottom: 50px;
+	
+	display: flex;
+	
+	font-size: 16px;
+	line-height: 28px;
+	color: #808080;
+}
+
+.blog-list .left-column {
+	padding-left: 17px;
+}
+
+.blog-item-title {
+	margin: 30px 0 10px;
+	
+	font-size: 20px;
+	color: #222;
+}
+
+.blog-btn {
+	padding: 5px 37px;
+}
+
+.blog-date,
+.blog-time {
+	display: inline-block;
+	position: relative;
+	
+	margin-top: 15px;
+	padding-left: 20px;
+}
+
+.blog-date {
+	padding-right: 90px;
+}
+
+.blog-date::before,
+.blog-time::before {
+	content: "";
+	position: absolute;
+	
+	width: 16px;
+	height: 16px;
+	
+	top: 4px;
+	left: 0;
+}
+.blog-time::before {
+	background-image: url("..//img/wall-clock.svg");
+}
+
+.blog-date::before {
+	background-image: url("..//img/calendar.svg");
+}
+
+
+/******************************app**************************************/
+
+
+
+.app {
+	padding-left: 600px;
+	padding-bottom: 180px;
+	
+	background-image: url("../img/phone-background.jpg");
+	background-position: top center;
+	
+}
+
+.app-btn {
+	width: 200px;
+	box-sizing: border-box;
+	
+	padding: 9px 20px 9px 70px;
+	margin-right: 35px;
+	
+	
+	font-family: "Poppins";
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	
+	text-align: left;
+	white-space: normal;
+	text-transform: none;
+	
+	border-radius: 15px;
+	
+	background-repeat: no-repeat;
+	background-position: 18% 50%;
+}
+
+.android-btn {
+	background-image: url("../img/android.svg");
+}
+
+.apple-btn {
+	background-image: url("../img/apple.svg");
+}
+
 
 
 
@@ -592,29 +805,5 @@ img {
 	font-family: Segoe Script;
 	src: local("Segoe Script");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
