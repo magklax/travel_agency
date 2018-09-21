@@ -69,6 +69,35 @@ img {
   height: auto;
 }
 
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.pink-text {
+	font-family: Segoe Script;
+	
+	color: #ef5b5b;
+	font-size: 24px;
+}
+
+.section-title {
+	margin: 10px 0 25px;
+	
+	font-size: 28px;
+}
+
+.description {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Poppins";
+	font-size: 16px;
+	line-height: 28px;
+	color: #808080;
+}
+
 /****************************************************************************/
 
 .main-header {
@@ -81,11 +110,6 @@ img {
   background-repeat: no-repeat;
 }
 
-.container {
-	width: 1170px;
-	margin: 0 auto;
-	padding: 0;
-}
 
 .main-nav {
 	display: flex;
@@ -146,10 +170,8 @@ img {
 	text-transform: none;
 }
 
-.pink-text {
-	font-family: Segoe Script;
-	
-	color: #ef5b5b;
+.header-banner .pink-text {
+	font-size: 28px;
 }
 
 .banner-title {
@@ -174,8 +196,6 @@ img {
 
 
 .feature-trips {
-	font-size: 24px;
-	
 	margin-bottom: 150px;
 }
 
@@ -186,20 +206,6 @@ img {
 .feature-trips .text-wrapper {
 	width: 270px;
 	margin-right: 30px;
-}
-
-.section-title {
-	margin: 10px 0 25px;
-	
-	font-size: 28px;
-}
-
-.description {
-	margin: 0;
-	padding: 0;
-	
-	font-size: 16px;
-	line-height: 28px;
 }
 
 .feature-trips .book-btn {
@@ -269,7 +275,6 @@ img {
 .services,
 .features {
 	padding: 150px 0 0;
-	font-size: 24px;
 	text-align: center;
 	
 	background-color: #f0efef;
@@ -295,8 +300,6 @@ img {
 .service-item, 
 .feature-item {
 	box-sizing: border-box;
-	
-	font-size: 16px;
 	
 	background-color: #fff;
 	border: 1px solid #cbcbcb;
@@ -341,7 +344,6 @@ img {
 
 .places {
 	padding: 150px 0;
-	font-size: 24px;
 	text-align: center;
 	
 	background-image: url("../img/map-background.jpg");
@@ -372,7 +374,7 @@ img {
 	display: flex;
 }
 
-.left-column {
+.right-column {
 	padding-left: 25px;
 	
 	text-align: left;
@@ -394,7 +396,6 @@ img {
 	
 	font-size: 16px;
 	line-height: 15px;
-	
 }
 
 .countries-list li {
@@ -499,7 +500,6 @@ img {
 	
 }
 
-
 /*********************************history***************************************/
 
 .history {
@@ -546,7 +546,6 @@ img {
 
 .modal-close {
 	position: absolute;
-	order: 100;
 	
 	top: 0;
 	right: -60px;
@@ -637,10 +636,6 @@ img {
 
 .client-text {
 	margin-bottom: auto;
-	
-	font-family: "Poppins";
-	font-size: 16px;
-	line-height: 28px;
 }
 
 .slick-current .client-feedback {
@@ -673,10 +668,8 @@ img {
 /******************************blog**************************************/
 
 .blog {
-	padding: 150px 0;
-	font-size: 24px;
+	padding: 150px 0 195px;
 	text-align: center;
-	
 }
 
 .blog-list {
@@ -701,7 +694,7 @@ img {
 	color: #808080;
 }
 
-.blog-list .left-column {
+.blog-list .right-column {
 	padding-left: 17px;
 }
 
@@ -751,15 +744,27 @@ img {
 
 /******************************app**************************************/
 
-
-
 .app {
-	padding-left: 600px;
-	padding-bottom: 180px;
+	min-height: 600px;
+	
+	padding-top: 185px;
+	box-sizing: border-box;
 	
 	background-image: url("../img/phone-background.jpg");
 	background-position: top center;
-	
+}
+
+.app .container {
+	padding-left: 600px;
+	box-sizing: border-box;
+}
+
+.app .description {
+	margin-bottom: 37px;
+}
+
+.app .section-title {
+	text-transform: uppercase;
 }
 
 .app-btn {
@@ -779,8 +784,6 @@ img {
 	white-space: normal;
 	text-transform: none;
 	
-	border-radius: 15px;
-	
 	background-repeat: no-repeat;
 	background-position: 18% 50%;
 }
@@ -793,6 +796,196 @@ img {
 	background-image: url("../img/apple.svg");
 }
 
+/******************************partner**************************************/
+
+.partners {
+	padding: 195px 0;
+	text-align: center;
+	color: #fff;
+	
+	background-image: url("../img/partner-background.jpg");
+}
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
+	
+	margin: 0;
+	margin-top: 75px;
+	padding: 0;
+	
+	list-style: none;
+}
+
+/******************************newsletter**************************************/
+
+.newsletter {
+	padding: 120px 0;
+	
+	background-color: #dedfdf;
+}
+
+.newsletter .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.newsletter-column {
+	width: 50%;
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+.newsletter-form {
+	display: flex;
+	justify-content: flex-end;
+	align-self: center;
+	
+	width: 50%;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.newsletter-form .field {
+	width: 100%;
+	height: 80px;
+	box-sizing: border-box;
+	
+	border: none;
+	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
+}
+
+.newsletter-btn {
+	padding: 0;
+	
+	width: 90px;
+	height: 80px;
+
+	cursor: pointer;
+
+	background-color: #00b1ff;
+	border: none;
+	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:focus {
+	background-color: #ef5b5b;
+}
+
+.newsletter-btn:active {
+	opacity: 0.6;
+}
+
+/******************************contact-us***************************************/
+
+.contact-us {
+	padding: 150px 0;
+	
+	text-align: center;
+}
+
+.contact-us-form {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-top: 95px;
+}
+
+
+.form-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	width: 547px;
+	box-sizing: border-box;
+}
+
+.contact-us-form input, 
+.contact-us-form textarea,
+.form-btn {
+	margin-bottom: 20px;
+}
+
+/******************Убрать в общие свойсвта****************/
+
+.field {
+	padding: 20px 40px;
+
+	box-sizing: border-box;  
+
+	font-size: 18px;
+	line-height: 28px;
+	color: #808080;
+
+	font-weight: 400;
+
+	background-color: #fff;
+	
+	overflow: hidden;
+}
+
+.field:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.field:focus::-moz-placeholder {
+    color: transparent;
+}
+ 
+.field:focus:-moz-placeholder {
+    color: transparent;
+}
+ 
+.field:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/**********************************/
+
+.contact-us-form .field {
+	border: 1px solid #808080;
+	border-radius: 5px;
+}
+
+textarea[name="message-text"] {
+  min-width: 547px;
+	max-width: 547px;
+	min-height: 190px;
+}
+	
+.form-btn	{
+	margin-left: auto;
+	padding: 15px 27px;
+	align-self: center;
+	
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+}
+/***********************************FOOTER**********************************/
+
+.main-footer {
+	padding: 100px 0;
+	
+	font-family: "Poppins";
+	background-color: #dedfdf;
+}
+
+.main-footer .description {
+	margin: 35px 0;
+}
+
+
+
+.contacts a {
+	color: #ef5b5b;
+	text-transform: none;
+}
+
+.contacts p[class*="contact-"] {
+	margin: 0;
+}
 
 
 
@@ -800,6 +993,19 @@ img {
 
 
 
+
+
+
+
+.copyright {
+	padding: 20px 300px 15px;
+	font-size: 16px;
+	line-height: 15px;
+	color: #fff;
+	background-color: #00b1ff;
+	text-align: center;
+}
+	
 
 @font-face {
 	font-family: Segoe Script;
