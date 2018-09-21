@@ -851,6 +851,8 @@ img {
 	height: 80px;
 	box-sizing: border-box;
 	
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 	border: none;
 	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
 }
@@ -866,6 +868,8 @@ img {
 	background-color: #00b1ff;
 	border: none;
 	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .newsletter-btn:hover,
@@ -891,7 +895,6 @@ img {
 	
 	margin-top: 95px;
 }
-
 
 .form-column {
 	display: flex;
@@ -966,17 +969,27 @@ textarea[name="message-text"] {
 /***********************************FOOTER**********************************/
 
 .main-footer {
-	padding: 100px 0;
+	padding: 100px 0 0;
 	
 	font-family: "Poppins";
 	background-color: #dedfdf;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
 }
 
 .main-footer .description {
 	margin: 35px 0;
 }
 
+/***********************************contacts**********************************/
 
+.contacts {
+	width: 470px;
+}
 
 .contacts a {
 	color: #ef5b5b;
@@ -987,16 +1000,85 @@ textarea[name="message-text"] {
 	margin: 0;
 }
 
+/***********************************links+social**********************************/
+.links,
+.social {
+	width: 170px;
+	
+	box-sizing: border-box;
+	padding-left: 60px;
+}
 
+.list-title {
+	margin: 0;
+	margin-bottom: 35px;
+	
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+}
 
+.links-list,
+.social-list {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
 
+/***********************************instagram**********************************/
 
+.instagram {
+	display: flex;
+	flex-direction: column;
+		
+	width: 270px;
+	box-sizing: border-box;
+	padding-left: 60px;
+}
 
+.search-form {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-top: auto;
+}
 
+.search-field {
+	height: 40px;
+	box-sizing: border-box;
+	
+	font-size: 14px;
+	font-weight: 500;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
+	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
+}
 
+.search-btn {
+	width: 40px;
+	padding: 0;
 
+	cursor: pointer;
 
+	background-color: #00b1ff;
+	border: none;
+	box-shadow: 0px 1px 10px 0px rgba(33, 30, 31, 0.2);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
 
+.search-btn:hover,
+.search-btn:focus {
+	background-color: #ef5b5b;
+}
+
+.search-btn:active {
+	opacity: 0.6;
+}
+
+/***********************************copyright**********************************/
 .copyright {
 	padding: 20px 300px 15px;
 	font-size: 16px;
@@ -1006,6 +1088,7 @@ textarea[name="message-text"] {
 	text-align: center;
 }
 	
+/************************************************* **********************************/
 
 @font-face {
 	font-family: Segoe Script;
